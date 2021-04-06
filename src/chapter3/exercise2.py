@@ -1,12 +1,14 @@
-try:  # this tries to run the blocks below whenever the user enters the expected format of input.
-    p = float(input("Enter hours:"))
-    s = float(input("Enter rate:"))
-    pay = (p * s)
-    w = (1.5 * s * p)
-    if p <= 40:
-        print(pay)  # This prints the pay for hours entered from forty and below.
-
-    else:
-        print(w)  # This prints the extra pay for whoever works for more than 40 hours
+try:
+    # this program computes the pay for workers according to the hours worked.
+    x = float(input("Enters hours:"))
+    y = float(input("Enters rate:"))
+    z = (x * y)  # this is the pay for hours of work below or equal to 40
+    q = y * 40
+    h = (1.5 * (x - 40) * y)  # h is the extra pay for hours worked beyond the 40 hours .
+    d = (q + h)  # this is the pay for hours of work above forty.
+    if x <= 40:
+        print(z)
+    elif x > 40:
+        print(d)
 except:
-    print("please enter numeric input")  # This will print an error message when the user enters  non-numeric input.
+    print("please enter numeric input")

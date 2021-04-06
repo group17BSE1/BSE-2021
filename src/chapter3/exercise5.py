@@ -1,3 +1,5 @@
+"""#the program prompts the user for the number of guests attending their wedding and prints
+the corresponding price in the console"""
 try:  # the block below is executed whenever the expected entry is input.
     g = int(input("enter no of guests>>"))
     if 0 < g <= 50:

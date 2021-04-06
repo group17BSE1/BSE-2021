@@ -1,4 +1,5 @@
-try:  # This  block of data will be executed if the user puts the right data format
+# This program prompts the user for score in yhe range 0 to 1 and prints the corresponding grade.
+try:
     y = float(input("please enter score in range 0.0...1.0:"))
     if 0 <= y < 0.6:
         print(y, "F")

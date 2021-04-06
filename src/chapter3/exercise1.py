@@ -1,9 +1,11 @@
-b = float(input("Enter hours:"))
-s = float(input("Enter rate:"))
-pay = (b * s)
-w = (1.5 * s * b)
-if b <= 40:
-    print(pay)  # This prints the pay for hours entered from forty and below.
-
-else:
-    print(w)  # this prints the extra pay for whoever works for more than 40 hours
+# this program computes the pay for workers according to the hours worked.
+x = float(input("Enters hours:"))
+y = float(input("Enters rate:"))
+z = (x * y)  # this is the pay for hours of work below or equal to 40
+q = y * 40
+h = (1.5 * (x - 40) * y)  # h is the extra pay for hours worked beyond the 40 hours .
+d = (q + h)  # this is the pay for hours of work above forty.
+if x <= 40:
+    print(z)
+elif x > 40:
+    print(d)

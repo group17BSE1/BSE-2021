@@ -1,7 +1,7 @@
+# this program reads an integer from input representing someone's age and prints the votabillity of the user.
 try:
-    # This will execute this block of data if the user puts the right data format
     a = int(input("enter age"))
-    if a >= 18:
+    if a >= 18:#caters for age from 18 and above.
         print("you can vote")
     elif 0 <= a <= 17:
         print("too young to vote")
