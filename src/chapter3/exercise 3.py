@@ -1,6 +1,7 @@
 # This program prompts the user for score in yhe range 0 to 1 and prints the corresponding grade.
+y = input('enter the score:')  # this prompts the user to input the score.
+
 try:
-    y = float(input("please enter score in range 0.0...1.0:"))
     if 0 <= y < 0.6:
         print(y, "F")
     elif 0.6 <= y <= 0.69:
@@ -13,5 +14,6 @@ try:
         print(y, "A")
     else:
         print("Bad score")
-except:
     print("INVALID ENTRY PLEASE")  # The compiler will print an error message if the user enters wrong data formats
+except ValueError:
+    print('Invalid entry')
