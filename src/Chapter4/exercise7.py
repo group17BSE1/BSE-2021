@@ -1,3 +1,4 @@
+# this program returns the grade after a user inputs the score between 0.0 and 1.0
 def compute_grade(t):
     if 0.0 <= t <= 1.0:
         if t >= 0.9:
@@ -8,7 +9,7 @@ def compute_grade(t):
             return 'C'
         if t >= 0.6:
             return 'D'
-        else:
+        elif t < 0.6:
             return 'F'
     return 'Bad score'  # this is the error message printed whenever score out of range is input.
 
