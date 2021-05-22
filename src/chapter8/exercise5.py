@@ -7,7 +7,7 @@ You will parse the From line and print out the second word for each From line,
 then you will also count the number of From (not From:) lines and print out a
 count at the end. """
 fname = input('please enter file name')  # prompt for user input of the mail box data.
-fhand = open('mbox-short.txt')  # make the input file readable.
+fhand = open('fname')  # make the input file readable.
 count = 0
 for line in fhand:
     words = line.split()
